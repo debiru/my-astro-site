@@ -1,5 +1,6 @@
 ---
 import Welcome from '../components/Welcome.astro';
+import PageHeader from '../components/PageHeader.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +8,13 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+  <PageHeader />
+  <h1>ようこそ私のホームページへ</h1>
 </Layout>
+
+<style>
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+</style>
