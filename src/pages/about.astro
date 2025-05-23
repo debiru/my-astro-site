@@ -1,6 +1,8 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import profile from '../assets/profile.png';
+import { Image } from 'astro:assets';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -8,6 +10,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="About - My Portfolio">
   <h1>About</h1>
+  <Image src={profile} width="200" height="200" alt="" />
 </Layout>
 
 <style>
